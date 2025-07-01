@@ -27,7 +27,7 @@
                 tapping-term-ms = <280>;
                 quick-tap-ms = <175>;
                 bindings = <&kp>, <&kp>;
-                hold-trigger-key-positions = <6 7 9 8 10 11 23 22 35 34 33 21 20 19 18 30 31 32 41 40 39>; // List of keys on the right side of the keyboard
+                hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 43 44 45>; // List of keys on the right side of the keyboard
                 hold-trigger-on-release;
             };
             hmr: home_row_mod_right {
@@ -38,7 +38,7 @@
                 tapping-term-ms = <280>;
                 quick-tap-ms = <175>;
                 bindings = <&kp>, <&kp>;
-                hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>; // List of keys on the left side of the keyboard
+                hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
                 hold-trigger-on-release;
             };
             ltl: layer_tap_left {
@@ -47,7 +47,7 @@
                 flavor = "balanced";
                 tapping-term-ms = <200>;
                 bindings = <&mo>, <&kp>;
-                hold-trigger-key-positions = <6 7 9 8 10 11 23 22 35 34 33 21 20 19 18 30 31 32 41 40 39>; // List of keys on the right side of the keyboard
+                hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 43 44 45>; // List of keys on the right side of the keyboard
                 hold-trigger-on-release;
             };
             ltr: layer_tap_right {
@@ -56,7 +56,7 @@
                 flavor = "balanced";
                 tapping-term-ms = <200>;
                 bindings = <&mo>, <&kp>;
-                hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>; // List of keys on the left side of the keyboard
+                hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
                 hold-trigger-on-release;
             };
         };
