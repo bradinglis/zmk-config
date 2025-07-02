@@ -45,6 +45,7 @@
                 quick-tap-ms = <150>;
                 bindings = <&mo>, <&kp>;
                 hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 43 44 45>; // List of keys on the right side of the keyboard
+                hold-trigger-on-release;
             };
             ltr: layer_tap_right {
                 compatible = "zmk,behavior-hold-tap";
@@ -54,6 +55,16 @@
                 quick-tap-ms = <150>;
                 bindings = <&mo>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
+                hold-trigger-on-release;
+            };
+            lts: layer_tap_space {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "balanced";
+                tapping-term-ms = <200>;
+                bindings = <&mo>, <&kp>;
+                hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
+                hold-trigger-on-release;
             };
         };
         keymap {
@@ -65,7 +76,7 @@
   &kp TAB    &kp Q       &kp W         &kp E       &kp R        &kp T &trans &trans &kp Y &kp U         &kp I        &kp O         &kp P          &kp BSPC
   &caps_word &hml LGUI A &hml LALT S   &hml LCTL D &hml LSHFT F &kp G &trans &trans &kp H &hmr RSHFT J  &hmr RCTL K  &hmr RALT L   &hmr RGUI SEMI &kp SQT
   &kp LSHFT  &kp Z       &kp X         &kp C       &kp V        &kp B               &kp N &kp M         &kp COMMA    &kp DOT       &kp FSLH       &kp ESC
-                         &mt LCTRL DEL &ltl 4 RET  &mt LGUI ESC                           &ltr 2 BSPC   &ltr 1 SPC   &ltr 3 TAB
+                         &mt LCTRL DEL &ltl 4 RET  &mt LGUI ESC                           &ltr 2 BSPC   &lts 1 SPC   &ltr 3 TAB
                         >;
                 };
                 num_layer {
