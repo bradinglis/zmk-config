@@ -37,6 +37,7 @@
                 quick-tap-ms = <150>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 41 40 42 43 44 45>; // List of keys on the right side of the keyboard
+                dgdgdgdgdgdgdg
                 hold-trigger-on-release;
             };
             hmr: home_row_mod_right {
@@ -95,7 +96,7 @@
                         display-name = "BAS";
                         bindings = <
   &kp TAB    &kp Q       &kp W         &kp E       &kp R        &kp T &trans &trans &kp Y &kp U         &kp I        &kp O         &kp P          &kp BSPC
-  &caps_word &hbl LGUI A &hbl LALT S   &hml LCTL D &hml LSHFT F &kp G &trans &trans &kp H &hmr RSHFT J  &hmr RCTL K  &hbr RALT L   &hbr RGUI SEMI &kp SQT
+  &caps_word &hbl LGUI A &hbl LALT S   &hbl LCTL D &hbl LSHFT F &kp G &trans &trans &kp H &hbr RSHFT J  &hbr RCTL K  &hbr RALT L   &hbr RGUI SEMI &kp SQT
   &kp LSHFT  &kp Z       &kp X         &kp C       &kp V        &kp B               &kp N &kp M         &kp COMMA    &kp DOT       &kp FSLH       &kp ESC
                          &mt LCTRL DEL &ltl 4 RET  &mt LGUI ESC                           &ltr 2 BSPC   &lts 1 SPC   &ltr 3 TAB
                         >;
