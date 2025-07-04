@@ -23,7 +23,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "balanced";
-                tapping-term-ms = <250>;
+                tapping-term-ms = <200>;
                 quick-tap-ms = <150>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 41 40 42 43 44 45>; // List of keys on the right side of the keyboard
@@ -32,18 +32,17 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "balanced";
-                tapping-term-ms = <250>;
+                tapping-term-ms = <200>;
                 quick-tap-ms = <150>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 41 40 42 43 44 45>; // List of keys on the right side of the keyboard
-                dgdgdgdgdgdgdg
                 hold-trigger-on-release;
             };
             hmr: home_row_mod_right {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "balanced";
-                tapping-term-ms = <250>;
+                tapping-term-ms = <200>;
                 quick-tap-ms = <150>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42 43 44 45>; // List of keys on the left side of the keyboard
@@ -52,7 +51,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "balanced";
-                tapping-term-ms = <250>;
+                tapping-term-ms = <200>;
                 quick-tap-ms = <150>;
                 bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42 43 44 45>; // List of keys on the left side of the keyboard
@@ -62,7 +61,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "balanced";
-                tapping-term-ms = <250>;
+                tapping-term-ms = <200>;
                 quick-tap-ms = <150>;
                 bindings = <&mo>, <&kp>;
                 hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 43 44 45>; // List of keys on the right side of the keyboard
@@ -72,7 +71,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "balanced";
-                tapping-term-ms = <250>;
+                tapping-term-ms = <200>;
                 quick-tap-ms = <150>;
                 bindings = <&mo>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
@@ -82,9 +81,10 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "balanced";
-                tapping-term-ms = <250>;
+                tapping-term-ms = <200>;
                 bindings = <&mo>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
+                hold-trigger-on-release;
             };
         };
         keymap {
