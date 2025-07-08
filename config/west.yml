@@ -5,9 +5,11 @@ manifest:
     # support nice_oled and nice_epaper
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: myzmk
+      url-base: https://github.com/bradinglis
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: myzmk
       revision: main
       import: app/west.yml
     # support nice_oled and nice_epaper
