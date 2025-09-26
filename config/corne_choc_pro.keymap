@@ -97,7 +97,7 @@
                         bindings = <
   &kp LSHIFT    &kp Q       &kp W         &kp E       &kp R        &kp T &trans &trans &kp Y &kp U         &kp I        &kp O         &kp P          &kp BSPC
   &caps_word &hrl LGUI A &hrl LALT S   &hrl LCTL D &hml 6 F     &kp G &trans &trans &kp H &hmr 7 J      &hrr RCTL K  &hrr RALT L   &hrr RGUI SEMI &kp SQT
-  &mo 2      &kp Z       &kp X         &kp C       &kp V        &kp B               &kp N &kp M         &kp COMMA    &kp DOT       &kp FSLH       &kp ESC
+  &mo 1      &kp Z       &kp X         &kp C       &kp V        &kp B               &kp N &kp M         &kp COMMA    &kp DOT       &kp FSLH       &kp ESC
                          &mt LCTRL DEL &ltl 4 RET  &mt LGUI ESC                           &ltr 2 BSPC   &lts 1 SPC   &ltr 3 TAB
                         >;
                 };
@@ -150,7 +150,7 @@
                         display-name = "LSHIFT";
                         bindings = <
   &kp TAB    &kp Q       &kp W         &kp E       &kp R        &kp T &trans &trans &kp LS(Y) &kp LS(U)         &kp LS(I)        &kp LS(O)         &kp LS(P)          &kp LS(BSPC)
-  &caps_word &hrl LS(LGUI) A &hrl LS(LALT) S     &hml LS(LCTL) D      &trans       &kp G &trans &trans &kp LS(H) &kp LS(J)         &kp LS(K)        &kp LS(L)         &kp LS(SEMI)       &kp LS(SQT)
+  &caps_word &hrl LS(LGUI) A &hrl LS(LALT) S     &hrl LS(LCTL) D      &trans       &kp G &trans &trans &kp LS(H) &kp LS(J)         &kp LS(K)        &kp LS(L)         &kp LS(SEMI)       &kp LS(SQT)
   &kp LSHFT  &kp Z       &kp X         &kp C       &kp V        &kp B               &kp LS(N) &kp LS(M)         &kp LS(COMMA)    &kp LS(DOT)       &kp LS(FSLH)       &kp LS(ESC)
                          &mt LCTRL DEL &ltl 4 RET  &mt LGUI ESC                           &ltr 2 LS(BSPC)   &lts 1 LS(SPC)   &ltr 3 LS(TAB)
                         >;
@@ -159,7 +159,7 @@
                         display-name = "RSHIFT";
                         bindings = <
   &kp LS(TAB)    &kp LS(Q)       &kp LS(W)         &kp LS(E)       &kp LS(R)        &kp LS(T) &trans &trans &kp Y &kp U         &kp I        &kp O         &kp P          &kp BSPC
-  &caps_word     &kp LS(A)       &kp LS(S)         &kp LS(D)       &kp LS(F)        &kp LS(G) &trans &trans &kp H &trans      &hmr LS(RCTL) K  &hrr LS(RALT) L   &hrr LS(RGUI) SEMI      &kp SQT
+  &caps_word     &kp LS(A)       &kp LS(S)         &kp LS(D)       &kp LS(F)        &kp LS(G) &trans &trans &kp H &trans        &hrr LS(RCTL) K  &hrr LS(RALT) L   &hrr LS(RGUI) SEMI      &kp SQT
   &kp LS(LSHFT)  &kp LS(Z)       &kp LS(X)         &kp LS(C)       &kp LS(V)        &kp LS(B)               &kp N &kp M         &kp COMMA    &kp DOT       &kp FSLH       &kp ESC
                          &mt LCTRL DEL &ltl 4 RET  &mt LGUI ESC                           &ltr 2 BSPC   &lts 1 SPC   &ltr 3 TAB
                         >;
