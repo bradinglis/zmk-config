@@ -7,11 +7,16 @@ manifest:
       url-base: https://github.com/mctechnology17
     - name: myzmk
       url-base: https://github.com/bradinglis
+    - name: urob
+    url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: myzmk
       revision: main
       import: app/west.yml
+    - name: zmk-unicode
+      remote: urob
+      revision: v0.3
     # support nice_oled and nice_epaper
     - name: zmk-nice-oled
       remote: mctechnology17
