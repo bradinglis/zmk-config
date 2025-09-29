@@ -2,13 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # support nice_oled and nice_epaper
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
     - name: myzmk
       url-base: https://github.com/bradinglis
     - name: urob
-    url-base: https://github.com/urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: myzmk
@@ -17,7 +16,6 @@ manifest:
     - name: zmk-unicode
       remote: urob
       revision: v0.3
-    # support nice_oled and nice_epaper
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
