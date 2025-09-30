@@ -91,6 +91,16 @@
                 tapping-term-ms = <150>;
                 bindings = <&mo>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
+                hold-trigger-on-release;
+            };
+            lts2: layer_tap_space_2 {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "balanced";
+                tapping-term-ms = <100>;
+                bindings = <&mo>, <&kp>;
+                hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
+                hold-trigger-on-release;
             };
             lm: lm {
                 compatible = "zmk,behavior-macro-two-param";
@@ -188,9 +198,9 @@
                 nav_layer_two {
                         display-name = "NAV2";
                         bindings = <
-   &studio_unlock &kp LBKT  &kp N7 &kp N8 &kp N9   &kp RBKT   &trans &trans &trans &trans &trans &trans &trans &trans
-   &mo 7          &kp GRAVE &kp N4 &kp N5 &kp N6   &kp MINUS  &trans &trans &kp LG(LC(LEFT))  &kp LG(LC(DOWN))  &kp LG(LC(UP))    &kp LG(LC(RIGHT)) &trans &trans
-   &bootloader    &kp N0    &kp N1 &kp N2 &kp N3   &kp EQUAL                &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans &trans
+   &studio_unlock &kp LBKT  &kp LG(N7) &kp LG(N8) &kp LG(N9)   &kp RBKT   &trans &trans &trans &trans &trans &trans &trans &trans
+   &mo 7          &kp GRAVE &kp LG(N4) &kp LG(N5) &kp LG(N6)   &kp MINUS  &trans &trans &kp LG(LC(LEFT))  &kp LG(LC(DOWN))  &kp LG(LC(UP))    &kp LG(LC(RIGHT)) &trans &trans
+   &bootloader    &kp N0    &kp LG(N1) &kp LG(N2) &kp LG(N3)   &kp EQUAL                &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans &trans
                             &trans &trans &kp BSLH                                 &trans &trans &trans      
                         >;
                 };
