@@ -87,8 +87,8 @@
             lts: layer_tap_space {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                flavor = "hold-preferred";
-                tapping-term-ms = <150>;
+                flavor = "balanced";
+                tapping-term-ms = <100>;
                 bindings = <&mo>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
                 hold-trigger-on-release;
@@ -97,7 +97,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 flavor = "balanced";
-                tapping-term-ms = <100>;
+                tapping-term-ms = <50>;
                 bindings = <&mo>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
                 hold-trigger-on-release;
