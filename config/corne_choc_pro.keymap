@@ -198,9 +198,9 @@
                 nav_layer_two {
                         display-name = "NAV2";
                         bindings = <
-   &studio_unlock &kp LBKT  &kp LG(N7) &kp LG(N8) &kp LG(N9)   &kp RBKT   &trans &trans &trans &trans &trans &trans &trans &trans
-   &mo 7          &kp GRAVE &kp LG(N4) &kp LG(N5) &kp LG(N6)   &kp MINUS  &trans &trans &kp LG(LC(LEFT))  &kp LG(LC(DOWN))  &kp LG(LC(UP))    &kp LG(LC(RIGHT)) &trans &trans
-   &bootloader    &kp N0    &kp LG(N1) &kp LG(N2) &kp LG(N3)   &kp EQUAL                &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans &trans
+   &studio_unlock &kp LS(LG(Q)       &kp LS(LG(W)         &kp LS(LG(E)       &kp LS(LG(R)        &kp LS(LG(T) &trans &trans &trans &trans &trans &trans &trans &trans
+   &mo 7          &kp LS(LG(A)       &kp LS(LG(S)         &kp LS(LG(D)       &kp LS(LG(F)        &kp LS(LG(G) &trans &trans &kp LG(LC(LEFT))  &kp LG(LC(DOWN))  &kp LG(LC(UP))    &kp LG(LC(RIGHT)) &trans &trans
+   &bootloader    &kp LS(LG(Z)       &kp LS(LG(X)         &kp LS(LG(C)       &kp LS(LG(V)        &kp LG(V)               &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans &trans
                             &trans &trans &kp BSLH                                 &trans &trans &trans      
                         >;
                 };
