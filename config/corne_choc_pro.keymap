@@ -183,8 +183,7 @@
   &kp LS(TAB)    &kp LS(Q)       &kp LS(W)         &kp LS(E)       &kp LS(R)        &kp LS(T) &trans &trans &kp Y &kp U         &kp I        &kp O         &kp P          &kp BSPC
   &caps_word     &kp LS(A)       &kp LS(S)         &kp LS(D)       &kp LS(F)        &kp LS(G) &trans &trans &kp H &trans        &hrr LS(RCTL) K  &hrr LS(RALT) L   &hrr LS(RGUI) SEMI      &kp SQT
   &kp LS(LSHFT)  &kp LS(Z)       &kp LS(X)         &kp LS(C)       &kp LS(V)        &kp LS(B)               &kp N &kp M         &kp COMMA    &kp DOT       &kp FSLH       &kp ESC
-                         &kp LS(DEL) &kp LS(RET)  &kp LS(ESC)                           &lm 4 LSHIFT   &lm 3 LSHIFT   &lm 5 LSHIFT
-                        >;
+                         &kp LS(DEL) &kp LS(RET)  &kp LS(ESC)                           &ltr 4 BSPC   &lts 3 SPC   &ltr 5 TAB                        >;
                 };
                 num_layer {
                         display-name = "NUMBER";
