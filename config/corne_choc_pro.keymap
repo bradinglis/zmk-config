@@ -24,6 +24,22 @@
 
 / {
         behaviors {
+            kpl: key_press_left {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <1>;
+                bindings = <&kp>, <&kp>;
+                mods = <(MOD_LGUI|MOD_LSFT|MOD_LALT|MOD_LCTL)>;
+            };
+            hml2: home_row_mod_left_shift2 {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                flavor = "hold-preferred";
+                tapping-term-ms = <200>;
+                quick-tap-ms = <150>;
+                bindings = <&kp>, <&kp>;
+                hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 41 40 42 43 44 45>; // List of keys on the right side of the keyboard
+                hold-trigger-on-release;
+            };
             hml: home_row_mod_left_shift {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
@@ -126,8 +142,8 @@
                 default_layer {
                         display-name = "BASIC";
                         bindings = <
-  &kp LSHIFT    &kp Q       &kp W         &kp E       &kp R        &kp T &trans &trans &kp Y &kp U         &kp I        &kp O         &kp P          &kp BSPC
-  &caps_word &hrl LGUI A &hrl LALT S   &hrl LCTL D &hml 1 F     &kp G &trans &trans &kp H &hmr 2 J      &hrr RCTL K  &hrr RALT L   &hrr RGUI SEMI &kp SQT
+  &kp LSHIFT    &kp Q       &kp W         &kpl E       &kp R        &kp T &trans &trans &kp Y &kp U         &kp I        &kp O         &kp P          &kp BSPC
+  &caps_word &hrl LGUI A &hrl LALT S   &hrl LCTL D &hml2 LSHFT F     &kp G &trans &trans &kp H &hmr 2 J      &hrr RCTL K  &hrr RALT L   &hrr RGUI SEMI &kp SQT
   &tog 3      &kp Z       &kp X         &kp C       &kp V        &kp B               &kp N &kp M         &kp COMMA    &kp DOT       &kp FSLH       &kp ESC
                          &mt LCTRL DEL &ltl 6 RET  &lt 8 ESC                           &ltr 4 BSPC   &lts 3 SPC   &ltr 5 TAB
                         >;
