@@ -30,7 +30,7 @@
                 flavor = "hold-preferred";
                 tapping-term-ms = <200>;
                 quick-tap-ms = <150>;
-                bindings = <&lsl>, <&kp>;
+                bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 41 40 42 43 44 45>; // List of keys on the right side of the keyboard
                 hold-trigger-on-release;
             };
@@ -50,7 +50,7 @@
                 flavor = "hold-preferred";
                 tapping-term-ms = <200>;
                 quick-tap-ms = <150>;
-                bindings = <&rsl>, <&kp>;
+                bindings = <&kp>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42 43 44 45>; // List of keys on the left side of the keyboard
                 hold-trigger-on-release;
             };
@@ -70,7 +70,7 @@
                 flavor = "balanced";
                 tapping-term-ms = <150>;
                 quick-tap-ms = <150>;
-                bindings = <&mo>, <&kp>;
+                bindings = <&mo>, <&kpl>;
                 hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 35 34 36 37 38 39 43 44 45>; // List of keys on the right side of the keyboard
                 hold-trigger-on-release;
             };
@@ -80,7 +80,7 @@
                 flavor = "balanced";
                 tapping-term-ms = <150>;
                 quick-tap-ms = <150>;
-                bindings = <&mo>, <&kp>;
+                bindings = <&mo>, <&kpr>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
                 hold-trigger-on-release;
             };
@@ -92,45 +92,6 @@
                 bindings = <&mo>, <&kp>;
                 hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
                 hold-trigger-on-release;
-            };
-            lts2: layer_tap_space_2 {
-                compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <2>;
-                flavor = "balanced";
-                tapping-term-ms = <50>;
-                bindings = <&mo>, <&kp>;
-                hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 20 19 18 28 29 33 30 31 32 41 40 42>; // List of keys on the left side of the keyboard
-                hold-trigger-on-release;
-            };
-            lsl: lsl {
-                compatible = "zmk,behavior-macro-one-param";
-                wait-ms = <0>;
-                tap-ms = <0>;
-                #binding-cells = <1>;
-                bindings
-                    = <&macro_param_1to1>
-                    , <&macro_press &mo MACRO_PLACEHOLDER>
-                    , <&macro_press &kp LSHFT>
-                    , <&macro_pause_for_release>
-                    , <&macro_release &kp LSHFT>
-                    , <&macro_param_1to1>
-                    , <&macro_release &mo MACRO_PLACEHOLDER>
-                    ;
-            };
-            rsl: rsl {
-                compatible = "zmk,behavior-macro-one-param";
-                wait-ms = <0>;
-                tap-ms = <0>;
-                #binding-cells = <1>;
-                bindings
-                    = <&macro_param_1to1>
-                    , <&macro_press &mo MACRO_PLACEHOLDER>
-                    , <&macro_press &kp RSHFT>
-                    , <&macro_pause_for_release>
-                    , <&macro_release &kp RSHFT>
-                    , <&macro_param_1to1>
-                    , <&macro_release &mo MACRO_PLACEHOLDER>
-                    ;
             };
             kpl: kpl {
                 compatible = "zmk,behavior-macro-one-param";
@@ -161,9 +122,9 @@
                 default_layer {
                         display-name = "BASIC";
                         bindings = <
-  &kp LSHIFT    &kp Q       &kp W         &kp E       &kp R        &kp T &trans &trans &kp Y &kp U         &kp I        &kp O         &kp P          &kp BSPC
-  &caps_word &hrl LGUI A &hrl LALT S   &hrl LCTL D &hml 1 F     &kp G &trans &trans &kp H &hmr 2 J      &hrr RCTL K  &hrr RALT L   &hrr RGUI SEMI &kp SQT
-  &tog 3      &kp Z       &kp X         &kp C       &kp V        &kp B               &kp N &kp M         &kp COMMA    &kp DOT       &kp FSLH       &kp ESC
+  &kp LSHIFT    &kpl Q       &kpl W         &kpl E       &kpl R        &kpl T &trans &trans &kpr Y &kpr U         &kpr I        &kpr O         &kpr P          &kpr BSPC
+  &caps_word &hrl LGUI A &hrl LALT S   &hrl LCTL D &hml LSHFT F     &kpl G &trans &trans &kpr H &hmr RSHFT J      &hrr RCTL K  &hrr RALT L   &hrr RGUI SEMI &kpr SQT
+  &tog 3      &kpl Z       &kpl X         &kpl C       &kpl V        &kpl B               &kpr N &kpr M         &kpr COMMA    &kpr DOT       &kpr FSLH       &kpr ESC
                          &mt LCTRL DEL &ltl 6 RET  &lt 8 ESC                           &ltr 4 BSPC   &lts 3 SPC   &ltr 5 TAB
                         >;
                 };
