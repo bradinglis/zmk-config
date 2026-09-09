@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: myzmk
+      remote: zmkfirmware
       revision: v0.3
       import: app/west.yml
     - name: zmk-unicode
