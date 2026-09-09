@@ -130,26 +130,8 @@
                         bindings = <
 &kp LSHIFT    &kpl Q        &kpl W        &kpl E        &kpl R        &kpl T     &trans  &trans  &kpr Y     &kpr U        &kpr I        &kpr O        &kpr P         &kpr BSPC
 &caps_word    &hrl LGUI A   &hrl LALT S   &hrl LCTL D   &hml LSHFT F  &kpl G     &trans  &trans  &kpr H     &hmr RSHFT J  &hrr RCTL K   &hrr RALT L   &hrr RGUI SEMI &kpr SQT
-&tog 3        &kpl Z        &kpl X        &kpl C        &kpl V        &kpl B                     &kpr N     &kpr M        &kpr COMMA    &kpr DOT      &kpr FSLH      &kpr ESC
-                            &mt LCTRL DEL &ltl 6 RET    &lt 8 ESC                                           &ltr 4 BSPC   &lts 3 SPC    &ltr 5 TAB    
-                        >;
-                };
-                left_shift_layer {
-                        display-name = "LSHIFT";
-                        bindings = <
-&kp TAB       &kp Q           &kp W           &kpl E          &kp R   &kp T      &trans  &trans  &kp LS(Y)  &kp LS(U)     &kp LS(I)     &kp LS(O)     &kp LS(P)     &kp LS(BSPC)
-&caps_word    &hrl LS(LGUI) A &hrl LS(LALT) S &hrl LS(LCTL) D &trans  &kp G      &trans  &trans  &kp LS(H)  &kp LS(J)     &kp LS(K)     &kp LS(L)     &kp LS(SEMI)  &kp LS(SQT)
-&kp LSHFT     &kp Z           &kp X           &kp C           &kp V   &kp B                      &kp LS(N)  &kp LS(M)     &kp LS(COMMA) &kp LS(DOT)   &kp LS(FSLH)  &kp LS(ESC)
-                              &mt LCTRL DEL   &ltl 6 RET      &mt LS(LGUI) LS(ESC)                          &kp LS(BSPC)  &kp LS(SPC)   &kp LS(TAB)
-                        >;
-                };
-                right_shift_layer {
-                        display-name = "RSHIFT";
-                        bindings = <
-&kp LS(TAB)   &kp LS(Q)     &kp LS(W)     &kp LS(E)     &kp LS(R)     &kp LS(T)  &trans  &trans  &kp Y      &kp U         &kp I         &kp O         &kp P         &kp BSPC      
-&caps_word    &kp LS(A)     &kp LS(S)     &kp LS(D)     &kp LS(F)     &kp LS(G)  &trans  &trans  &kp H      &trans        &hrr LS(RCTL) &hrr LS(RALT) &hrr LS(RGUI) &kp SQT       
-&kp LS(LSHFT) &kp LS(Z)     &kp LS(X)     &kp LS(C)     &kp LS(V)     &kp LS(B)                  &kp N      &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp ESC       
-                            &kp LS(DEL)   &kp LS(RET)   &kp LS(ESC)                                         &ltr 4 BSPC   &lts 3 SPC    &ltr 5 TAB    
+&tog 1        &kpl Z        &kpl X        &kpl C        &kpl V        &kpl B                     &kpr N     &kpr M        &kpr COMMA    &kpr DOT      &kpr FSLH      &kpr ESC
+                            &mt LCTRL DEL &ltl 4 RET    &lt 6 ESC                                           &ltr 2 BSPC   &lts 1 SPC    &ltr 3 TAB    
                         >;
                 };
                 num_layer {
@@ -166,7 +148,7 @@
                         bindings = <
 &studio_unlock &kp LBRC        &kp AMPS      &kp ASTRK     &kp LPAR       &kp RBRC  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &kp TILDE       &kp DLLR      &kp PRCNT     &kp CARET      &kp UNDER &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        
-&tog 3         &kp RPAR        &kp EXCL      &kp AT        &kp HASH       &kp PLUS                  &trans  &trans  &trans  &trans  &trans  &trans   
+&tog 1         &kp RPAR        &kp EXCL      &kp AT        &kp HASH       &kp PLUS                  &trans  &trans  &trans  &trans  &trans  &trans   
                                &trans        &kp RPAR      &kp PIPE                                         &trans  &trans  &trans        
                         >;
                 };
@@ -183,7 +165,7 @@
                         display-name = "NAV";
                         bindings = <
 &studio_unlock &kp LBKT        &kp N7        &kp N8        &kp N9         &kp RBKT  &trans  &trans  &trans    &trans    &trans    &trans    &trans  &studio_unlock
-&mo 7          &hrl LGUI GRAVE &hrl LALT N4  &hrl LCTL N5  &hrl LSHIFT N6 &kp MINUS &trans  &trans  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans  &trans        
+&mo 5          &hrl LGUI GRAVE &hrl LALT N4  &hrl LCTL N5  &hrl LSHIFT N6 &kp MINUS &trans  &trans  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans  &trans        
 &bootloader    &kp N0          &kp N1        &kp N2        &kp N3         &kp EQUAL                 &kp HOME  &kp PG_DN &kp PG_UP &kp END   &trans  &bootloader   
                                &trans        &trans        &kp BSLH                                           &trans    &trans    &trans        
                         >;
@@ -201,7 +183,7 @@
                         display-name = "NAV2";
                         bindings = <
 &studio_unlock &kp LS(LG(Q))  &kp LS(LG(W))  &kp LS(LG(E))  &kp LS(LG(R))  &kp LS(LG(T))  &trans  &trans  &trans           &trans           &trans          &trans            &trans  &trans        
-&mo 7          &kp LS(LG(A))  &kp LS(LG(S))  &kp LS(LG(D))  &kp LS(LG(F))  &kp LS(LG(G))  &trans  &trans  &kp LG(LC(LEFT)) &kp LG(LC(DOWN)) &kp LG(LC(UP))  &kp LG(LC(RIGHT)) &trans  &trans        
+&mo 5          &kp LS(LG(A))  &kp LS(LG(S))  &kp LS(LG(D))  &kp LS(LG(F))  &kp LS(LG(G))  &trans  &trans  &kp LG(LC(LEFT)) &kp LG(LC(DOWN)) &kp LG(LC(UP))  &kp LG(LC(RIGHT)) &trans  &trans        
 &bootloader    &kp LS(LG(Z))  &kp LS(LG(X))  &kp LS(LG(C))  &kp LS(LG(V))  &kp LS(LG(B))                  &kp LG(LC(H))    &kp PG_DN        &kp PG_UP       &kp END           &trans  &trans        
                               &trans         &trans         &trans                                                         &trans           &kp LG(LC(SPC)) &trans         
                         >;
