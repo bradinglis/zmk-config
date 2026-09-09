@@ -9,10 +9,17 @@
 include:
   - board: corne_choc_pro_left
     snippet: studio-rpc-usb-uart
-    shield: nice_epaper
+    shield: sharp_mip
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: corne_choc_pro_bt_left
   - board: corne_choc_pro_right
-    shield: nice_epaper
+    shield: sharp_mip
     snippet: studio-rpc-usb-uart
     artifact-name: corne_choc_pro_bt_right
+
+  - board: corne_choc_pro_left
+    shield: settings_reset
+    snippet: studio-rpc-usb-uart
+  - board: corne_choc_pro_right
+    shield: settings_reset
+    snippet: studio-rpc-usb-uart
